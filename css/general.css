@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/********************************/
+/* GENERAL */
+/********************************/
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.primary-heading {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.tertiary-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ae3ec9;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75;
+}
+.button-call,
+.button:link,
+.button:visited {
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.button--full:link,
+.button--full:visited {
+  background-color: #ae3ec9;
+  color: #fff;
+}
+
+.button--full:hover,
+.button--full:active {
+  background-color: #862e9c;
+}
+.button--outline:link,
+.button--outline:visited {
+  background-color: #f8f0fc;
+  color: #555;
+}
+.button--outline:hover,
+.button--outline:active {
+  background-color: #e599f7;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.button--call--form {
+  background-color: #862e9c;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.button--call--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+.small--m--right {
+  margin-right: 1.6rem !important;
+}
+
+.reusable-grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+  margin-bottom: 0;
+}
+
+.grid--2column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center--vertically {
+  align-items: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.medium-margin-bottom {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-in-center {
+  text-align: center;
+}
+
+.food-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.food-list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.food-list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #862e9c;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.containerbox {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
